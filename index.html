@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー - Rubicon</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.8;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #B87A28;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  .updated {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 40px;
+    color: #B87A28;
+  }
+  h3 {
+    font-size: 15px;
+    margin-top: 24px;
+  }
+  p, li {
+    font-size: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: #f5f5f5;
+  }
+  .contact {
+    background: #f9f6f0;
+    border-left: 3px solid #B87A28;
+    padding: 16px 20px;
+    margin-top: 40px;
+  }
+  a {
+    color: #B87A28;
+  }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年8月14日</p>
+
+<p>
+本プライバシーポリシーは、個人開発アプリケーション「Rubicon」（以下「本アプリ」）における、
+利用者の情報の取り扱いについて説明するものです。
+</p>
+
+<h2>1. 基本方針</h2>
+<p>
+本アプリは「ローカルファースト」の設計思想に基づいており、利用者が保存した記事、ハイライト、
+メモ、対話履歴などのデータは、開発者が運営するサーバーには送信・保存されません。
+すべてのデータは利用者ご自身の端末内に保存されます。
+</p>
+
+<h2>2. 収集する情報とその取り扱い</h2>
+
+<h3>2.1 端末内にのみ保存される情報</h3>
+<p>以下の情報は、利用者の端末内のデータベースにのみ保存され、外部に送信されることはありません。</p>
+<ul>
+  <li>保存した記事の本文・URL・タグ・既読状態・アーカイブ状態・スター状態</li>
+  <li>記事に対するハイライトおよび引用箇所、メモ</li>
+  <li>AI機能によって生成された要約・分析（ブリーフ）およびその対話履歴</li>
+  <li>利用者が入力するプロファイル情報（自己紹介・関心領域など）</li>
+  <li>アプリの表示設定（フォント、配色、表示モードなど）</li>
+</ul>
+
+<h3>2.2 Anthropic API キー（BYOK）</h3>
+<p>
+本アプリは「Bring Your Own Key（BYOK）」方式を採用しています。利用者は、AI機能（記事の分析、
+ブリーフ生成、対話機能）を利用するために、ご自身の Anthropic API キーをアプリ内に設定する
+必要があります。
+</p>
+<ul>
+  <li>API キーは端末内に安全に保存され、開発者のサーバーに送信されることはありません。</li>
+  <li>AI機能利用時、関連するデータ（記事の要旨、ハイライト、プロファイル情報等）は、
+      利用者自身の API キーを用いて、利用者の端末から <strong>Anthropic 社の API に直接送信</strong>されます。
+      この通信は開発者を経由しません。</li>
+  <li>送信されたデータの取り扱いについては、
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic社のプライバシーポリシー</a>
+      が適用されます。</li>
+</ul>
+
+<h3>2.3 共有機能</h3>
+<p>
+他のアプリ（Safari、X など）から記事を共有保存する機能（iOS Share Extension）は、
+共有された URL やテキストを端末内のアプリ間でのみ受け渡します。この情報が外部に送信されることはありません。
+</p>
+
+<h3>2.4 開発者が収集しない情報</h3>
+<p>本アプリは、以下の情報を収集・保存する仕組みを実装していません。</p>
+<ul>
+  <li>アクセス解析・アナリティクス</li>
+  <li>クラッシュレポート・エラーログの外部送信</li>
+  <li>広告識別子・トラッキング用データ</li>
+  <li>氏名・メールアドレス・電話番号等の登録情報（アカウント登録機能自体が存在しません）</li>
+</ul>
+
+<h2>3. データの管理・削除</h2>
+<p>
+利用者は、アプリ内の設定画面から、保存されたすべてのデータをエクスポート（バックアップ）または
+完全に削除することができます。アプリをアンインストールした場合、端末内に保存されていたデータは
+端末の仕様に基づき削除されます。
+</p>
+
+<h2>4. 第三者への提供</h2>
+<p>
+開発者は、利用者の同意なく、本アプリで扱う情報を第三者に提供することはありません。
+AI機能利用時に Anthropic 社へ送信される情報は、利用者ご自身の判断と設定（API キー）に基づくものであり、
+開発者がこれを閲覧・収集することはありません。
+</p>
+
+<h2>5. 対象年齢</h2>
+<p>
+本アプリは個人の情報整理・分析を目的としたツールであり、成人利用者を主な対象としています。
+</p>
+
+<h2>6. 本ポリシーの変更</h2>
+<p>
+本ポリシーの内容は、本アプリの機能変更に伴い更新されることがあります。重要な変更がある場合は、
+本ページ上で告知します。
+</p>
+
+<div class="contact">
+  <strong>お問い合わせ</strong><br>
+  本ポリシーに関するご質問は、アプリ内の設定画面からご連絡ください。
+</div>
+
+</body>
+</html>
